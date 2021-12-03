@@ -1,0 +1,131 @@
+.startbtn{
+    /*border: white;*/
+    width: auto;
+    height: auto;
+}
+.cols{
+    display: flex;
+}
+.sidebar{
+
+}
+.ads-input-form{
+    margin-bottom: 5px;
+}
+.btn-outline-secondary{
+    width: auto;
+    height: 40px;
+}
+
+.get_middle{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+}
+.reset_btn{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-left: 150px;
+}
+.nowcontainer{
+    display: flex;
+    justify-content: center;
+}
+.nowbtn {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+
+}
+.post-preview-out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.post-preview-left{
+    position:relative;
+    float:left;
+    margin-top: 0px;
+    width:50%;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-preview-right {
+    position:relative;
+    float:right;
+    width:50%;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar{
+    height: 100vh;
+    border-right: solid 3px navy;
+}
+.bar{
+    display: inline-block;
+    width: 1px;
+    height: 18px;
+    margin: 0 5px;
+    background-color: #e2e2e2;
+    vertical-align: -1px;
+}
+.busInfoContainer{
+    letter-spacing: 0!important;
+}
+.totalWalk, .payment, .totalDistance{
+    font-size: small;
+}
+*{
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.busInfoAll{
+    border-bottom: solid 1px darkgray;
+}
+*{
+    font-family: 'Gothic A1', sans-serif;
+}
+.reset_btn:hover {
+    background-color:#313b66;
+}
+
+.get_middle, .reset_btn{
+    background-color:#5d64e3;
+    border-radius:4px;
+    border:1px solid #ffffff;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size:15px;
+    padding:14px 20px;
+    text-decoration:none;
+}
+
+.get_middle:hover {
+    background-color:#313b66;
+}
+.select_btn{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px -150px -150px -600px;
+}
+
+.keyword, .category{
+    font-size: 40px;
+    padding: 30px;
+    margin-left: 60px;
+    border: solid 5px #0069d9;
+    text-align: center;
+}
+.mainimg{
+    display: block;
+    margin: 100px auto 0;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>혼디모앙</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="css/keyword.css">
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: white;border-bottom: solid 2px gray">
+  <div class="container">
+    <a class="navbar-brand" href="index.html" style="color: #0069d9">혼디모앙</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link"  href="index.html"style="color: #0069d9">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="searchaddress.html" style="color: #0069d9">길찾기</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="post.html"style="color: #0069d9">추천장소</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="traffic.html" style="color: #0069d9">대중교통</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Page Header -->
+<header class="masthead" style="height: 68px; margin-bottom: 0;">
+  <div class="overlay"></div>
+</header>
+
+
+  <!--Sidebar & main Content-->
+<div class="cols">
+  <div class="sidebar" style="width: 450px">
+    <div class="container" id="businfo" style="display: flex; flex-direction: column; justify-content: center;">
+      <div id="clickLatlng" style="padding: 5px; border-bottom: solid 2px gray"></div>
+      <div class="busInfoAll">
+
+      <div class="busInfoContainer" style="padding: 5px; border-bottom: solid 2px gray">
+        <div class="totalTime"></div>
+        <span class="totalWalk"></span>
+        <span class="bar"></span>
+        <span class="payment"></span>
+        <span class="bar"></span>
+        <span class="totalDistance"></span>
+      </div>
+      <div class="busInfo" style="display: flex;">
+        <div class="iconInfo">
+          <img src="img/go.png" width="30px" height="30px" style="padding-right: 5px; margin-left: 30px;">
+        </div>
+
+        <div class="busstopInfoContainer">
+          <div class="walk">
+            <div class="startPoint">출발지</div>
+            <div class="firstwalkdistance" style="font-size: 1rem; color: rgba(0,0,0,0.71); padding-left: 7px;"></div>
+          </div>
+
+          <div class="bus">
+            <div class="firstStartStation"></div>
+            <div class="busNo" style="font-size: 1rem; color: rgba(39,85,168,0.93); padding-left: 7px;"></div>
+            <div class="howManyStation"></div>
+            <div class="stationName collapse" style="font-size: 1rem; color: rgba(0,0,0,0.71); padding-left: 7px;"></div>
+            <div class="lastEndStation"></div>
+          </div>
+
+          <div class="walk">
+            <div class="secondtwalkdistance" style="font-size: 1rem; color: rgba(0,0,0,0.71); padding-left: 7px;"></div>
+            <div class="endPoint">도착지</div>
+          </div>
+        </div>
+      </div>
+
+        <br>
+        <div>대체 버스</div>
+        <div class="otherbus" style="font-size: 1rem; color: rgba(0,0,0,0.71)"></div>
+
+      </div>
+
+    </div>
+  </div>
+  <div id="map" style="width:100vw;height:100vh;margin-top: 0px"/>
+</div>
+
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b56d841aa9be6126e11d8c9bc3921be9&libraries=services"></script>
+<!--  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e31eec4e98525fe454b4676d346042ae&libraries=services"></script>-->
+  <script type="module" src="js/traffic.js" charset="utf-8"></script>
+</body>
+</html>
